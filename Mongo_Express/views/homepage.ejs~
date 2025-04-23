@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini WhatsApp - Home</title>
+    <link rel="stylesheet" href="/public/styles.css"> <!-- Link your CSS here -->
+</head>
+<body>
+<div class="container">
+    <h1>Welcome to Mini WhatsApp</h1>
+    <div class="buttons">
+        <!-- Button to create a new chat -->
+        <a href="/chats/new" class="button">Create New Chat</a>
+        <!-- Button to view all chats -->
+        <a href="/chats" class="button">Show All Chats</a>
+    </div>
+</div>
+</body>
+</html>

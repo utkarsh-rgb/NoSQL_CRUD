@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini WhatsApp - Home</title>
+    <style>
+        /* Inline CSS styling */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #e9eef1;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        h1 {
+            color: #333333;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 12px 20px;
+            font-size: 1rem;
+            color: #ffffff;
+            background-color: #25D366;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .button:hover {
+            background-color: #1da955;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .button:active {
+            background-color: #1a8c4b;
+            transform: translateY(1px);
+            box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Welcome to Mini WhatsApp</h1>
+    <!-- Button to create a new chat -->
+    <form action="/chats/new" method="get">
+        <button type="submit" class="button">Create New Chat</button>
+    </form>
+    <!-- Button to show all chats -->
+    <form action="/chats" method="get">
+        <button type="submit" class="button">Show All Chats</button>
+    </form>
+</div>
+</body>
+</html>

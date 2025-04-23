@@ -1,0 +1,116 @@
+/* Basic styling for body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e5ddd5; /* WhatsApp-like background color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header styling */
+h1 {
+    color: #075e54; /* WhatsApp green */
+    margin: 20px 0;
+    font-size: 2rem;
+}
+
+/* Chat container styling */
+.chat-message {
+    width: 60%;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    padding: 15px;
+    border-left: 5px solid #25d366; /* WhatsApp bright green */
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for chat messages */
+.chat-message:hover {
+    background-color: #f1f1f1;
+}
+
+/* Text styling for chat details */
+p {
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+/* Styling for 'From', 'Message', and 'Received By' labels */
+.chat-message p:first-child {
+    font-weight: bold;
+    color: #075e54; /* Dark green for sender info */
+}
+
+.chat-message p:nth-child(2) {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.chat-message p:last-child {
+    font-size: 0.9em;
+    color: #888;
+    text-align: right;
+}
+
+/* Button styles */
+form {
+    display: inline-block;
+}
+
+button {
+    font-size: 1rem;
+    padding: 8px 16px;
+    margin: 5px;
+    color: #fff;
+    background-color: #25d366; /* WhatsApp green */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover effects for buttons */
+button:hover {
+    background-color: #1da955;
+}
+
+/* Button color overrides */
+button.edit-btn {
+    background-color: #007bff;
+}
+
+button.edit-btn:hover {
+    background-color: #0066cc;
+}
+
+button.delete-btn {
+    background-color: #dc3545;
+}
+
+button.delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* Container for multiple chat messages */
+.chats-container {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Additional padding for the 'New Chat' button */
+.new-chat-btn {
+    margin-top: 20px;
+    background-color: #075e54; /* Dark green */
+}
+
+.new-chat-btn:hover {
+    background-color: #064b47;
+}
